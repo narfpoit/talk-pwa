@@ -2,18 +2,15 @@
 
 # Progressive Web Apps
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
+It is widely believed that the next frontier of web development is creating web apps that are more powerful, faster to load, faster to use, and more accessible and responsive.
 
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+Enter **progressive web apps (a/k/a PWAs)**.
+
+These are only a few of the enhanced features of web development that make progressive web apps exciting.  In this talk, we'll go through a high level overview of PWAs and what sets them apart.
 
 ## Prerequisites
 
--   Basic knowledge of web development and some app development
+-   Basic knowledge of web development and mobile app development
 -   A mobile device that runs the latest version of [Google Chrome](https://www.google.com/chrome/browser/mobile/)
 -   HTML, CSS, and JavaScript
 
@@ -21,74 +18,176 @@ example [js-template](https://www.github.com/ga-wdi-boston/js-template).
 
 By the end of this, developers should be able to:
 
--   Describe what a progressive web app is.
--   Identify a PWA and describe its features and benenfits.
--   Avoid objectives that start with "Use" or "Understand".
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
+-   Describe what a progressive web app (a/k/a PWA) is.
+-   Identify characteristics and benefits of PWAs.
+-   Use terminology to describe PWA development tools and technologies: manifest, service workers, and application shell architecture.
 
 ## Preparation
 
-1.  Fork and clone this repository TODO add link
+1.  Fork and clone this repository
 2.  Open a 2nd browser window in [Google Chrome](https://www.google.com/chrome/browser/features.html?brand=CHBD&gclid=CjwKCAjwo4jOBRBmEiwABWNaMVaLRHvNRYZcUmAFh33hX-8NuSekPEYlVcL0HNOM6SC-9MRUgSTYYxoC-coQAvD_BwE&dclid=CLHHtZfWtdYCFcZGNwod7TMG8A)
 
-## Leading Topic Heading
+## What is a Progressive Web App?
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
+According to [Wikipedia](https://en.wikipedia.org/wiki/Progressive_web_app), Progressive Web App(s):
 
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an [imperative
-verb](https://en.wikipedia.org/wiki/Imperative_mood).
+> is a term used to denote web applications that use the latest web technologies.
 
-## Demo: Write a Demo
+> are also known as Installable Web Apps or Hybrid Web Apps
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+> are regular web pages or websites, but can appear to the user like traditional applications or native mobile applications. The application type attempts to combine features offered by most modern browsers with the benefits of mobile experience.
 
-Demos correspond to the "I do" portion of scaffolding from consultant training.
+What does this mean, exactly?  Allow me to show you...
 
-## Code-Along: Write an Code-Along
+## Follow-Along
 
-During the code-along, developers should apply concepts covered in the previous
-demo, led by the consultant.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
+In your Chrome browser, copy and paste the following text into your url bar:
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-training.
+```chrome://flags/#enable-add-to-shelf```
 
-## Lab: Write a Lab
+In the highlighted section, select "Enabled" in the drop down menu. Then, do the same for the following link:
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
+```chrome://flags/#bypass-app-banner-engagement-checks```
 
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
+Now navigate to:
 
-Labs correspond to the "You do" portion of scaffolding from consultant
-training.
+https://deanhume.github.io/beer/
+
+Disclaimer: Always drink responsibly!
+
+## Characteristics of a Progressive Web App
+
+![Characteristics of a PWA](https://i.imgur.com/hqot73Dh.jpg "Characteristics of a PWA")
+
+What differences can you point out when you navigated to the [site](https://deanhume.github.io/beer/) above?
+
+### Characteristics
+
+These main technologies are what make PWAs distinctive. They are the core of components that set PWAs apart from what we commonly know as downloadable native apps and other standard web sites which require a fast internet connection to function optimally in your browser.
+
+According to Google developers, now the leading champions of PWAs, the distinctive characteristics of PWAs are:
+
+>**Progressive** - Work for every user, regardless of browser choice because they’re built with progressive enhancement as a core tenet.
+
+>**Responsive** - Fit any form factor: desktop, mobile, tablet, or forms yet to emerge.
+
+>**Connectivity independent** - Service workers allow work offline, or on low quality networks.
+
+>**App-like** - Feel like an app to the user with app-style interactions and navigation.
+
+>**Fresh** - Always up-to-date thanks to the service worker update process.
+
+>**Safe** - Served via HTTPS to prevent snooping and ensure content hasn’t been tampered with.
+
+>**Discoverable** - Are identifiable as “applications” thanks to W3C manifests and service worker registration scope allowing search engines to find them.
+
+>**Re-engageable** - Make re-engagement easy through features like push notifications.
+
+>**Installable** - Allow users to “keep” apps they find most useful on their home screen without the hassle of an app store.
+
+>**Linkable** - Easily shared via a URL and do not require complex installation.
+
+## Technologies
+
+To develop PWAs, there is a set of commonly used technologies used:
+
+### Manifest
+
+A JSON-based centralized place to put metadata associated with a web application including:
+
+* The name of the web application
+* Links to the web app icons or image objects
+* The preferred URL to launch or open the web app
+* The web app configuration data for a number of characteristics
+* Declaration for default orientation of the web app
+* Enables to set the display mode e.g. full screen
+
+A manifest is what enables users to have native-like mobile experiences on PWAs.
+
+Code example of a **manifest**:
+
+```{
+  "name": "HackerWeb",
+  "short_name": "HackerWeb",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A simply readable Hacker News app.",
+  "icons": [{
+    "src": "images/touch/homescreen48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen96.png",
+    "sizes": "96x96",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen168.png",
+    "sizes": "168x168",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "related_applications": [{
+    "platform": "web"
+  }, {
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+  }]
+}```
+
+### Service Workers
+
+ > Technically, Service Workers provide a scriptable network proxy in the web browser to manage the web/HTTP requests programmatically. The Service Workers lie between the network and device to supplement the content. They are capable of using the cache mechanisms efficiently and allow error-free behavior during offline periods.
+ - Wikipedia
+
+
+
+Benefits
+
+* Capable of handling the push notification easily
+* Synchronise data in the background
+* Capable of responding to the resource requests originate elsewhere
+* Receive centralized updates
+
+### Application Shell Structure
+
+The Basic User Interface or "shell" of the Responsive Web Design (RWD) is stored by Service Workers in the cache.  This enables users to rapidly use the app regardless of connectivity.
+
+<!-- refer to atom project here -->
+
+## Caveats
+
+Although most browsers support PWAs, one notable exception is Safari.  There's been an on-going debate about whether Apple should support this type of app development, whether they do remains to be seen.
+
+Another downside of PWAs is building a large app that is highly interactive (like a game) or performs intense tasks, PWAs may not be the way to go as there are storage limits in browsers.
+
+## Framework Support
+
+Currently, the following frameworks support PWA development, though there could be other ways to integrate into your existing application.
+
+* React
+* Angular
+* Vue.js
 
 ## Additional Resources
 
--   Any useful links should be included in the talk material where the link is
-    first referenced.
--   Additional links for further study or exploration are appropriate in this
-    section.
--   Links to important parts of documentation not covered during the talk, or
-    tools tangentially used but not part of the focus of the talk, are also
-    appropriate.
+-   [Intro to Progressive Web Apps by Google](https://www.udacity.com/course/intro-to-progressive-web-apps--ud811)
+-   [Service Workers: An introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)
+-   [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+-   [Service Workers](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker)
+-  [The Ultimate Guide to PWAs](https://scotch.io/tutorials/the-ultimate-guide-to-progressive-web-applications
+
 
 ## [License](LICENSE)
 
