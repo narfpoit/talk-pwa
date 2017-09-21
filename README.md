@@ -144,7 +144,8 @@ Code example of a **manifest**:
     "platform": "play",
     "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
   }]
-}```
+}
+```
 
 ### Service Workers
 
