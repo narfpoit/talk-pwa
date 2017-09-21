@@ -2,8 +2,11 @@
 
 # Progressive Web Apps
 
-It's been said that the next frontier of web development is creating web apps that are more powerful, faster to load, faster to use, and more accessible and responsive.  Enter **progressive web apps (a/k/a PWAs)**.
-What I previously described are only a few of the enhanced features of web development that make progressive web apps exciting.
+It is widely believed that the next frontier of web development is creating web apps that are more powerful, faster to load, faster to use, and more accessible and responsive.
+
+Enter **progressive web apps (a/k/a PWAs)**.
+
+These are only a few of the enhanced features of web development that make progressive web apps exciting.  In this talk, we'll go through a high level overview of PWAs and what sets them apart.
 
 ## Prerequisites
 
@@ -56,24 +59,13 @@ Disclaimer: Always drink responsibly!
 
 ![Characteristics of a PWA](https://i.imgur.com/hqot73Dh.jpg "Characteristics of a PWA")
 
-What differences can you point out when you naviageted to the [site](https://deanhume.github.io/beer/) above?
+What differences can you point out when you navigated to the [site](https://deanhume.github.io/beer/) above?
 
----
+### Characteristics
 
-## Technologies
+These main technologies are what make PWAs distinctive. They are the core of components that set PWAs apart from what we commonly know as downloadable native apps and other standard web sites which require a fast internet connection to function optimally in your browser.
 
-To develop PWAs, there is a set of commonly used components, or technologies, used:
-
-### Manifest
-
-### Service Workers
-
-### Application Shell Structure
-
-
-These technologies make PWAs distinctive in that they enable the following combination of characteristics to set them apart from what we commonly know as downloadable native apps and other standard web sites which require a fast internet connection to function optimally in your browser.
-
-The current leading champion of PWAs is  Google.  It was designer Frances Berriman and Google Chrome engineer Alex Russell who coined the term "Progressive Web Apps" and according to Google developers, the distinctive characteristics of PWS are:
+According to Google developers, now the leading champions of PWAs, the distinctive characteristics of PWAs are:
 
 >**Progressive** - Work for every user, regardless of browser choice because they’re built with progressive enhancement as a core tenet.
 
@@ -95,32 +87,107 @@ The current leading champion of PWAs is  Google.  It was designer Frances Berrim
 
 >**Linkable** - Easily shared via a URL and do not require complex installation.
 
-## Lab: Write a Lab
+## Technologies
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
+To develop PWAs, there is a set of commonly used technologies used:
 
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
+### Manifest
 
-Labs correspond to the "You do" portion of scaffolding from consultant
-training.
+A JSON-based centralized place to put metadata associated with a web application including:
+
+* The name of the web application
+* Links to the web app icons or image objects
+* The preferred URL to launch or open the web app
+* The web app configuration data for a number of characteristics
+* Declaration for default orientation of the web app
+* Enables to set the display mode e.g. full screen
+
+A manifest is what enables users to have native-like mobile experiences on PWAs.
+
+Code example of a **manifest**:
+
+```{
+  "name": "HackerWeb",
+  "short_name": "HackerWeb",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A simply readable Hacker News app.",
+  "icons": [{
+    "src": "images/touch/homescreen48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen96.png",
+    "sizes": "96x96",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen168.png",
+    "sizes": "168x168",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "related_applications": [{
+    "platform": "web"
+  }, {
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+  }]
+}```
+
+### Service Workers
+
+ > Technically, Service Workers provide a scriptable network proxy in the web browser to manage the web/HTTP requests programmatically. The Service Workers lie between the network and device to supplement the content. They are capable of using the cache mechanisms efficiently and allow error-free behavior during offline periods.
+ - Wikipedia
+
+
+
+Benefits
+
+* Capable of handling the push notification easily
+* Synchronise data in the background
+* Capable of responding to the resource requests originate elsewhere
+* Receive centralized updates
+
+### Application Shell Structure
+
+The Basic User Interface or "shell" of the Responsive Web Design (RWD) is stored by Service Workers in the cache.  This enables users to rapidly use the app regardless of connectivity.
+
+<!-- refer to atom project here -->
+
+## Caveats
+
+Although most browsers support PWAs, one notable exception is Safari.  There's been an on-going debate about whether Apple should support this type of app development, whether they do remains to be seen.
+
+Another downside of PWAs is building a large app that is highly interactive (like a game) or performs intense tasks, PWAs may not be the way to go as there are storage limits in browsers.
+
+## Framework Support
+
+Currently, the following frameworks support PWA development, though there could be other ways to integrate into your existing application.
+
+* React
+* Angular
+* Vue.js
 
 ## Additional Resources
 
 -   [Intro to Progressive Web Apps by Google](https://www.udacity.com/course/intro-to-progressive-web-apps--ud811)
 -   [Service Workers: An introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)
--   Links to important parts of documentation not covered during the talk, or
-    tools tangentially used but not part of the focus of the talk, are also
-    appropriate.
+-   [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+-   [Service Workers](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker)
+-  [The Ultimate Guide to PWAs](https://scotch.io/tutorials/the-ultimate-guide-to-progressive-web-applications
+
 
 ## [License](LICENSE)
 
