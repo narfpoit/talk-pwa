@@ -89,7 +89,7 @@ According to Google developers, now the leading champions of PWAs, the distincti
 
 ## Technologies
 
-To develop PWAs, there is a set of commonly used technologies used:
+To develop PWAs, there is a set of commonly-used technologies:
 
 ### Manifest
 
