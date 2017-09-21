@@ -2,11 +2,11 @@
 
 # Progressive Web Apps
 
-It's been said that the next frontier of web development is creating web apps that are more powerful, faster to load and use, and more accessible and responsive.  These are only a few the enhanced features of mobile development that make **progressive web apps** exciting.
+It's been said that the next frontier of web development is creating web apps that are more powerful, faster to load, faster to use, and more accessible and responsive.  These are only a few of the enhanced features of web development that make **progressive web apps** exciting.
 
 ## Prerequisites
 
--   Basic knowledge of web development and some app development
+-   Basic knowledge of web development and mobile app development
 -   A mobile device that runs the latest version of [Google Chrome](https://www.google.com/chrome/browser/mobile/)
 -   HTML, CSS, and JavaScript
 
@@ -17,31 +17,39 @@ By the end of this, developers should be able to:
 -   Describe what a progressive web app (a/k/a PWA) is.
 -   Identify characteristics and benefits of PWAs.
 -   Use terminology to describe PWA development tools and technologies: manifest, service workers, and application shell architecture.
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
 
 ## Preparation
 
-1.  Fork and clone this repository TODO add link
+1.  Fork and clone this repository
 2.  Open a 2nd browser window in [Google Chrome](https://www.google.com/chrome/browser/features.html?brand=CHBD&gclid=CjwKCAjwo4jOBRBmEiwABWNaMVaLRHvNRYZcUmAFh33hX-8NuSekPEYlVcL0HNOM6SC-9MRUgSTYYxoC-coQAvD_BwE&dclid=CLHHtZfWtdYCFcZGNwod7TMG8A)
 
-## Leading Topic Heading
+## What is a Progressive Web App?
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
+According to [Wikipedia](https://en.wikipedia.org/wiki/Progressive_web_app), a Progressive Web App:
 
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an [imperative
-verb](https://en.wikipedia.org/wiki/Imperative_mood).
+> is a term used to denote web applications that use the latest web technologies.
 
-## Demo
+> are also known as Installable Web Apps or Hybrid Web Apps
 
-In your Chrome browser, copy and paste the following text into your url
+> are regular web pages or websites, but can appear to the user like traditional applications or native mobile applications. The application type attempts to combine features offered by most modern browsers with the benefits of mobile experience.
 
+What does this mean, exactly?
 
-Demos correspond to the "I do" portion of scaffolding from consultant training.
+## Follow-Along
+
+In your Chrome browser, copy and paste the following text into your url bar:
+
+```chrome://flags/#enable-add-to-shelf```
+
+In the highlighted section, select "Enabled" in the drop down menu. Then, do the same for the following link:
+
+```chrome://flags/#bypass-app-banner-engagement-checks```
+
+Now navigate to:
+
+https://deanhume.github.io/beer/
+
+Disclaimer: Always drink responsibly!
 
 ## Code-Along: Write an Code-Along
 
