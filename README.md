@@ -26,7 +26,7 @@ By the end of this, developers should be able to:
 
 ## What is a Progressive Web App?
 
-According to [Wikipedia](https://en.wikipedia.org/wiki/Progressive_web_app), a Progressive Web App:
+According to [Wikipedia](https://en.wikipedia.org/wiki/Progressive_web_app), Progressive Web App(s):
 
 > is a term used to denote web applications that use the latest web technologies.
 
@@ -56,19 +56,19 @@ Disclaimer: Always drink responsibly!
 
 ![Characteristics of a PWA](https://photos.app.goo.gl/tPwQxTv7I9w8iOsl1 "Characteristics of a PWA")
 
-What differences can you point out?
+What differences can you point out when you naviageted to the [site](https://deanhume.github.io/beer/) above?
 
 ---
 
-# Technologies
+## Technologies
 
 To develop PWAs, there is a set of commonly used components, or technologies, used:
 
-## Manifest
+### Manifest
 
-## Service Workers
+### Service Workers
 
-## Application Shell Structure
+### Application Shell Structure
 
 
 These technologies make PWAs distinctive in that they enable the following combination of characteristics to set them apart from what we commonly know as downloadable native apps and other standard web sites which require a fast internet connection to function optimally in your browser.
@@ -76,14 +76,23 @@ These technologies make PWAs distinctive in that they enable the following combi
 The current leading champion of PWAs is  Google.  It was designer Frances Berriman and Google Chrome engineer Alex Russell who coined the term "Progressive Web Apps" and according to Google developers, the distinctive characteristics of PWS are:
 
 >**Progressive** - Work for every user, regardless of browser choice because they’re built with progressive enhancement as a core tenet.
+
 >**Responsive** - Fit any form factor: desktop, mobile, tablet, or forms yet to emerge.
+
 >**Connectivity independent** - Service workers allow work offline, or on low quality networks.
+
 >**App-like** - Feel like an app to the user with app-style interactions and navigation.
+
 >**Fresh** - Always up-to-date thanks to the service worker update process.
+
 >**Safe** - Served via HTTPS to prevent snooping and ensure content hasn’t been tampered with.
->**Discoverable** - Are identifiable as “applications” thanks to W3C manifests[6] and service worker registration scope allowing search engines to find them.
+
+>**Discoverable** - Are identifiable as “applications” thanks to W3C manifests and service worker registration scope allowing search engines to find them.
+
 >**Re-engageable** - Make re-engagement easy through features like push notifications.
+
 >**Installable** - Allow users to “keep” apps they find most useful on their home screen without the hassle of an app store.
+
 >**Linkable** - Easily shared via a URL and do not require complex installation.
 
 ## Lab: Write a Lab
