@@ -2,7 +2,7 @@
 
 # Progressive Web Apps
 
-It's been said that the next frontier in web development is creating web apps that are more powerful, faster to load, and more accessible.  These enhancements plus more can be achieved through *progressive web apps*.
+It's been said that the next frontier of web development is creating web apps that are more powerful, faster to load and use, and more accessible and responsive.  These are only a few the enhanced features of mobile development that make **progressive web apps** exciting.
 
 ## Prerequisites
 
@@ -14,9 +14,9 @@ It's been said that the next frontier in web development is creating web apps th
 
 By the end of this, developers should be able to:
 
--   Describe what a progressive web app is.
--   Identify a PWA and describe its features and benenfits.
--   Avoid objectives that start with "Use" or "Understand".
+-   Describe what a progressive web app (a/k/a PWA) is.
+-   Identify characteristics and benefits of PWAs.
+-   Use terminology to describe PWA development tools and technologies: manifest, service workers, and application shell architecture.
 -   Rewrite objecives that begin with "Use" by inverting sentence structure.
 -   End each objective with a period.
 -   Write objectives on the whiteboard so they can be referenced during a talk.
@@ -36,23 +36,17 @@ Demos, exercises, and labs are labelled as such, followed by a colon and a
 description of the activity starting with an [imperative
 verb](https://en.wikipedia.org/wiki/Imperative_mood).
 
-## Demo: Write a Demo
+## Demo
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+In your Chrome browser, copy and paste the following text into your url
+
 
 Demos correspond to the "I do" portion of scaffolding from consultant training.
 
 ## Code-Along: Write an Code-Along
 
-During the code-along, developers should apply concepts covered in the previous
-demo, led by the consultant.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
+![Characteristics of a PWA](./word-cloud.jpg "Characteristics of a PWA")
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-training.
 
 ## Lab: Write a Lab
 
@@ -75,10 +69,8 @@ training.
 
 ## Additional Resources
 
--   Any useful links should be included in the talk material where the link is
-    first referenced.
--   Additional links for further study or exploration are appropriate in this
-    section.
+-   [Intro to Progressive Web Apps by Google](https://www.udacity.com/course/intro-to-progressive-web-apps--ud811)
+-   [Service Workers: An introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)
 -   Links to important parts of documentation not covered during the talk, or
     tools tangentially used but not part of the focus of the talk, are also
     appropriate.
