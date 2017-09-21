@@ -2,7 +2,8 @@
 
 # Progressive Web Apps
 
-It's been said that the next frontier of web development is creating web apps that are more powerful, faster to load, faster to use, and more accessible and responsive.  These are only a few of the enhanced features of web development that make **progressive web apps** exciting.
+It's been said that the next frontier of web development is creating web apps that are more powerful, faster to load, faster to use, and more accessible and responsive.  Enter **progressive web apps (a/k/a PWAs)**.
+What I previously described are only a few of the enhanced features of web development that make progressive web apps exciting.
 
 ## Prerequisites
 
@@ -33,7 +34,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Progressive_web_app), a P
 
 > are regular web pages or websites, but can appear to the user like traditional applications or native mobile applications. The application type attempts to combine features offered by most modern browsers with the benefits of mobile experience.
 
-What does this mean, exactly?
+What does this mean, exactly?  Allow me to show you...
 
 ## Follow-Along
 
@@ -51,10 +52,39 @@ https://deanhume.github.io/beer/
 
 Disclaimer: Always drink responsibly!
 
-## Code-Along: Write an Code-Along
+## Characteristics of a Progressive Web App
 
 ![Characteristics of a PWA](https://photos.app.goo.gl/tPwQxTv7I9w8iOsl1 "Characteristics of a PWA")
 
+What differences can you point out?
+
+---
+
+# Technologies
+
+To develop PWAs, there is a set of commonly used components, or technologies, used:
+
+## Manifest
+
+## Service Workers
+
+## Application Shell Structure
+
+
+These technologies make PWAs distinctive in that they enable the following combination of characteristics to set them apart from what we commonly know as downloadable native apps and other standard web sites which require a fast internet connection to function optimally in your browser.
+
+The current leading champion of PWAs is  Google.  It was designer Frances Berriman and Google Chrome engineer Alex Russell who coined the term "Progressive Web Apps" and according to Google developers, the distinctive characteristics of PWS are:
+
+>**Progressive** - Work for every user, regardless of browser choice because they’re built with progressive enhancement as a core tenet.
+>**Responsive** - Fit any form factor: desktop, mobile, tablet, or forms yet to emerge.
+>**Connectivity independent** - Service workers allow work offline, or on low quality networks.
+>**App-like** - Feel like an app to the user with app-style interactions and navigation.
+>**Fresh** - Always up-to-date thanks to the service worker update process.
+>**Safe** - Served via HTTPS to prevent snooping and ensure content hasn’t been tampered with.
+>**Discoverable** - Are identifiable as “applications” thanks to W3C manifests[6] and service worker registration scope allowing search engines to find them.
+>**Re-engageable** - Make re-engagement easy through features like push notifications.
+>**Installable** - Allow users to “keep” apps they find most useful on their home screen without the hassle of an app store.
+>**Linkable** - Easily shared via a URL and do not require complex installation.
 
 ## Lab: Write a Lab
 
