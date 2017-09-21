@@ -2,14 +2,7 @@
 
 # Progressive Web Apps
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
-
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+It's been said that the next frontier in web development is creating web apps that are more powerful, faster to load, and more accessible.  These enhancements plus more can be achieved through *progressive web apps*.
 
 ## Prerequisites
 
