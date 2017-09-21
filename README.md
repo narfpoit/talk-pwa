@@ -187,7 +187,7 @@ Currently, the following frameworks support PWA development, though there could 
 -   [Service Workers: An introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)
 -   [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)
 -   [Service Workers](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker)
--  [The Ultimate Guide to PWAs](https://scotch.io/tutorials/the-ultimate-guide-to-progressive-web-applications
+-  [The Ultimate Guide to PWAs](https://scotch.io/tutorials/the-ultimate-guide-to-progressive-web-applications)
 
 
 ## [License](LICENSE)
