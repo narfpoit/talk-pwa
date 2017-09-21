@@ -54,7 +54,7 @@ Disclaimer: Always drink responsibly!
 
 ## Characteristics of a Progressive Web App
 
-![Characteristics of a PWA](https://photos.app.goo.gl/tPwQxTv7I9w8iOsl1 "Characteristics of a PWA")
+![Characteristics of a PWA](/Users/natalialara/Downloads/talk-pwa/images/word-cloud.jpg?raw=true "Characteristics of a PWA")
 
 What differences can you point out when you naviageted to the [site](https://deanhume.github.io/beer/) above?
 
