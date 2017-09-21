@@ -45,7 +45,7 @@ Demos correspond to the "I do" portion of scaffolding from consultant training.
 
 ## Code-Along: Write an Code-Along
 
-![Characteristics of a PWA](./word-cloud.jpg "Characteristics of a PWA")
+![Characteristics of a PWA](https://photos.app.goo.gl/tPwQxTv7I9w8iOsl1 "Characteristics of a PWA")
 
 
 ## Lab: Write a Lab
