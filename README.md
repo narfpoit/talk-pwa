@@ -2,7 +2,7 @@
 
 # Progressive Web Apps
 
-It is widely believed that the next frontier of web development is creating web apps that are more powerful, faster to load, faster to use, and more accessible and responsive.
+It is widelyThe next frontier of web development is creating web apps that are more powerful, faster to load, faster to use, more accessible, and responsive.
 
 Enter **progressive web apps (a/k/a PWAs)**.
 
